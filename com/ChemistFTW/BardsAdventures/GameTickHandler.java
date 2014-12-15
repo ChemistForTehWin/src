@@ -16,7 +16,8 @@ public class GameTickHandler {
     int sleepTime = 0;
 
     public boolean isGameRunning = false;
-    public void ProcessTimers(){
+
+    public void ProcessTimers() {
         timers.forEach((Timer timer) -> {
             if (timer.isShouldBeDestroyedNextGameTick()) {
                 timers.remove(timer);
@@ -26,17 +27,18 @@ public class GameTickHandler {
         });
 
     }
-    public void RegisterTimer(Timer timer){
+
+    public void RegisterTimer(Timer timer) {
         timers.add(timer);
     }
-    public void GameTickHandlerStart(){
+
+    public void GameTickHandlerStart() {
 
         System.out.println("GameTickHandler started!");
-        while (isGameRunning){
+        while (isGameRunning) {
             try {
                 TimeUnit.MILLISECONDS.sleep(SKIP_TICKS);
-            }
-            catch (InterruptedException ex){
+            } catch (InterruptedException ex) {
 
                 System.out.println("Something interrupted me!");
             }
@@ -47,7 +49,8 @@ public class GameTickHandler {
 
         }
     }
-    public GameTickHandler(){
+
+    public GameTickHandler() {
         this.isGameRunning = true;
 
 

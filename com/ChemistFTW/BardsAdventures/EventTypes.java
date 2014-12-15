@@ -1,8 +1,9 @@
 package com.ChemistFTW.BardsAdventures;
+
 /**
  * Created by ChemistFTW on 11.12.2014.
  */
-public final class EventTypes{
+public final class EventTypes {
     public static final int EVENT_NO_TYPE = -1;
     public static final int EVENT_GAME_TICK = 0;
     public static final int EVENT_GAME_PAUSED = 1;

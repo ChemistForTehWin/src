@@ -4,7 +4,7 @@ public class Application {
     public static CustomEventHandler customEventHandler = new CustomEventHandler();
     public static GameTickHandler tickHandler = new GameTickHandler();
 
-    public static void start(){
+    public static void start() {
 
         AppWindow appWindow = new AppWindow();
         appWindow.setVisible(true);
@@ -13,11 +13,12 @@ public class Application {
         tickHandler.isGamePaused = false;
         tickHandler.GameTickHandlerStart();
     }
-    public static void init(){
+
+    public static void init() {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         init();
         start();

@@ -9,25 +9,30 @@ public class Button {
     int xSize;
     int ySize;
     boolean show = false;
-    public Button(){
+
+    public Button() {
         x0 = 0;
         y0 = 0;
         xSize = 0;
         ySize = 0;
     }
-    public Button(int x0,int y0,int xSize,int ySize){
+
+    public Button(int x0, int y0, int xSize, int ySize) {
         this.x0 = x0;
         this.y0 = y0;
         this.xSize = xSize;
         this.ySize = ySize;
     }
-    public void ButtonShow(boolean doShow){
+
+    public void ButtonShow(boolean doShow) {
         this.show = doShow;
     }
-    public void ButtonSetSprite(Sprite sprite){
+
+    public void ButtonSetSprite(Sprite sprite) {
 
     }
-    public void ButtonAddEvent(){
+
+    public void ButtonAddEvent() {
         // PUT EVENT HERE!!!
     }
 }
